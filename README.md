@@ -34,8 +34,8 @@ node --experimental-strip-types <kit>/sdk/run.ts --url http://127.0.0.1:8099 --t
 - **REST v3** under `/api/v3`: repositories, branches, refs, commits, contents (create, update,
   stale-sha 409, delete), labels, issues, comments and pull requests with files and squash merge.
 - **GraphQL v4** at `/api/graphql`: the documents `gh` and `github-mcp-server` send, the `__type`
-  feature probes `gh` uses, cursor pagination and the create-issue, close-issue, create-pull-request
-  and merge-pull-request mutations, with operation batching.
+  feature probes `gh` uses, cursor pagination and the create, close, comment and merge mutations,
+  with operation batching.
 - **MCP** at `/mcp`: JSON-RPC 2.0 over the Streamable HTTP transport, revision 2026-07-28 with
   `server/discover`, and six tools (`create_repo`, `get_repo`, `create_issue`, `list_issues`,
   `create_pull_request`, `merge_pull_request`) acting on the same store REST reads.
